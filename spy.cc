@@ -29,10 +29,12 @@
 #include <iostream>
 
 #include <boost/asio.hpp>
-#define  BOOST_CHRONO_HEADER_ONLY
-#include <boost/chrono/time_point.hpp>
-#include <boost/chrono/io/time_point_io.hpp>
+
+#define BOOST_CHRONO_HEADER_ONLY
 #include <boost/chrono/chrono.hpp>
+#include <boost/chrono/time_point.hpp>
+#define BOOST_ALLOW_DEPRECATED_HEADERS
+#include <boost/chrono/io/time_point_io.hpp>
 
 std::mutex cerr_mutex;
 
